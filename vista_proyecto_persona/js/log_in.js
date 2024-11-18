@@ -73,7 +73,7 @@ $(document).ready(function name(params) {
         const listToast = $(".container-toast");
         const toast = $("<div></div>").attr('class', 'toast toast-success show');
         const icon = $("<i></i>").attr('class', 'fa fa-check-circle toast-icon');
-        const message = $("<div></div>").text("Registro Exitoso");
+        const message = $("<div></div>").text("Inicio de Sesión Exitoso");
         const iconClose = $("<i></i>").attr('class', 'fa fa-close');
         toast.append(icon, message, iconClose);
         listToast.append(toast);
