@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*quita las margenes por defecto y los espaciados entre lineas*/
+    font-family: 'EB Garamond', serif;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    display: flex;
+    /*trabaja con justify-content*/
+    align-items: center;
+    /*alineación de los elementos verticalmente*/
+    justify-content: center;
+    /*alineacion de los elemntos horizontalmente*/
+    min-height: 100vh;
+    background-color: #070520;
+    /*de llegar a tomar una imagen para que se ajuste completamente a la pantalla usar basckground size-cover*/
+}
+
+.container-form {
+    /*border: solid thin red;solid establece el borfe, thin hay que preguntar*/
+    max-width: 900px;
+    min-height: 90vh;
+    display: flex;
+    /*Dispone de los dos subclases apiladas horizontalmente*/
+    border-radius: 20px;
+    transition: all 1s ease;
+    margin: 10px;
+
+}
+
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background-color: #8D8DA8;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    min-height: 80vh;
+}
+
+.info-childs {
+    width: 100%;
+    padding: 30px;
+}
+
+.info-childs h2 {
+    font-size: 2.5rem;
+    color: #1D1A4E;
+}
+
+.info-childs p {
+    margin: 15px 0;
+    color: #2B2B34;
+}
+
+.info-childs input {
+    background-color: #fff;
+    outline: none;
+    border: solid 2px #1A1378;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #1A1378;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.info-childs input:hover {
+    background-color: #1A1378;
+    border: none;
+    color: #fff;
+}
+
+.form-information {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    min-height: 80vh;
+}
+
+.form-information-childs {
+    min-height: 70vh;
+    padding: 3%;
+}
+
+.form-information-childs h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.form-information-childs p {
+    color: #555;
+}
+
+.icons {
+    margin: 15px;
+}
+
+.icons i {
+    border-radius: 50%;
+
+    padding: 15px;
+    cursor: pointer;
+    color: #9191bd;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+
+}
+
+.icons i:hover {
+    background-color: #c7c7f3;
+    color: #fff;
+}
+
+.form {
+    box-shadow: 2px 3px 10px rgb(231, 231, 231);
+    margin: 30px 0 0 0;
+    width: 98%;
+    padding: 2%;
+    min-height: 50vh;
+}
+
+label{
+    width: 98%;
+    text-align: start;
+    color: #333;
+
+}
+
+input {
+    border-radius: 10px;
+    padding: 1.5%;
+    background-color: white;
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border: none;
+    color: #333;
+}
+
+
+.form label i {
+    color: #a7a7a7;
+}
+
+.form input[type="submit"] {
+    background-color: #1A1378;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10%;
+    transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #dddde9;
+    color: #1A1378;
+    font-weight: bolder;
+}
+
+.hide {
+    /*     display:none; */
+    display: none;
+    position: absolute;
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+
+/*RESPONSIVE FORM-ADAPTACION A LA DISPOSICION DE DISTINTOS TAMAÑOS DE DISPOSITIVOS*/
+@media screen and (max-width:750px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    html {
+        font-size: 10px;
+    }
+
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .information {
+        width: 100%;
+        padding: 20%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: opx;
+    }
+
+    .form-information {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+}

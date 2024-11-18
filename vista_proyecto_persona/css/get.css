@@ -1,0 +1,132 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #050226;
+    width: 98%;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+.header_name{
+    border-bottom: 1px solid white;
+    width: 98%;
+    padding: 1%;
+    height: 10.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_name h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.header_name h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.header_nav{
+    width: 98%;
+    height: 4.5vh;
+    padding: .5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    height: 4.5vh;
+}
+.header_nav ul li{
+    font-size: large;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.header_nav ul li:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.header_nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+main{
+    width: 98%;
+    padding: 1%;
+    min-height: 85%;
+    /* background-color: #8681C4; */
+    background-image: url(../img/get/background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_objects{
+    width: 78%;
+    min-height: 80vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.container_objects .title_container{
+    color: #0E0A3D;
+    font-size: xx-large;
+    text-shadow: 4px 4px 4px white;
+
+}
+
+.table_objects_get{
+    margin-top: 4%;
+    width: 88%;
+    padding: 1%;
+    min-height: 60vh;
+    box-shadow: 1px 2px 20px black;
+    background-color: white;
+}
+.table_objects_get tr:nth-child(odd) td {
+    background-color: #e5e5f7;
+}
+
+.table_objects_get th{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    border-left: 1px dotted black;
+    padding: 8px;
+    width: 16.66%;
+/*     background-color:hsl(220, 100%, 10%); */
+    background: radial-gradient(circle, #05042C, #353463);
+    color: white;
+}
+
+.table_objects_get td{
+    padding: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 8vh;
+    width: 16.66%;
+}

@@ -1,0 +1,5 @@
+Notas
+
+1. Recuerda que es interesante ver que cambie el input de color cuando se llene
+    es un detalle demasiado interesante, que permanezca blanco antes de llenar 
+    y de color al llenar

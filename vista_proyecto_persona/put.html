@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Info</title>
+    <link rel="stylesheet" href="css/put.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/put_dinamic.js"></script>
+    <script src="js/put.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_name">
+            <h1><a href="">Noche Oscura del Alma</a></h1>
+        </div>
+        <nav class="header_nav">
+            <ul>
+                <li><a href="">Quienes somos</a></li>
+                <li><a href="">Posts</a></li>
+                <li><a href="">Registrarse</a></li>
+                <li><a href="">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container_objects put">
+            <h3 class="title_container">Actualización Datos de Usuario</h3>
+
+            <div class="checkboxes">
+                <p>A continuación seleccione los campos que desea actualizar :</p>
+
+                <label><input type="checkbox" class="chkCampo" data-target="#nombreCampo" > Nombre</label>
+                <label><input type="checkbox" class="chkCampo" data-target="#apellidoCampo"> Apellido</label>
+                <label><input type="checkbox" class="chkCampo" data-target="#fechaNacimientoCampo" > Fecha de Nacimiento</label>
+                <label><input type="checkbox" class="chkCampo" data-target="#emailCampo"> Correo Electrónico</label>
+                <label><input type="checkbox" class="chkCampo" data-target="#contrasenaCampo" > Contraseña</label>
+            </div>
+        
+            <!-- Campos que se mostrarán al seleccionar los checkboxes -->
+            <div id="formulario" class="form-container">
+                <div id="documentoCampo" >
+                    <label for="nombre">Documento:</label>
+                    <input type="text" id="documento" name="documento" placeholder="Ingrese su documento de identidad">
+                </div>
+                <div id="nombreCampo" class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                </div>
+        
+                <div id="apellidoCampo" class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                </div>
+
+                <div id="fechaNacimientoCampo" class="form-group">
+                    <label for="fec_nac">Fecha de Nacimiento:</label>
+                    <input type="date" id="fec_nac" name="fec_nac" placeholder="Ingrese su fecha de nacimiento">
+                </div>
+        
+                <div id="emailCampo" class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo">
+                </div>
+        
+                <div id="contrasenaCampo" class="form-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña">
+                </div>
+        
+                <button type="submit" class="btn_actualizar">Actualizar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
